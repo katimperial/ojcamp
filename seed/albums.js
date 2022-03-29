@@ -17,13 +17,13 @@ const main = async () => {
         trackListings: 'Nightwalkers',
         releaseDate: '6/1/2010',
         label: 'Self released',
-        art: ''},
+        art: 'waiting'},
         { artist: 'XRay Eyeballs',
         title: 'Egyptian Magician (Let\'s All Get High)',
         trackListings: 'Egyptian Magician (Let\'s All Get High)',
         releaseDate: '6/25/2010',
         label: 'Self released',
-        art: ''},
+        art: 'waiting'},
         { artist: 'Xray Eyeballs',
         title: 'Crystal ep',
         trackListings: 'Crystal, Broken Beds, Kamsing Nights',
@@ -140,7 +140,7 @@ const main = async () => {
         art: 'https://f4.bcbits.com/img/a1767544542_16.jpg' },
     ]
 
-    await Album.insertMany(plants)
+    await Album.insertMany(albums)
     console.log("Created some albums!")
 }
 const run = async () => {
