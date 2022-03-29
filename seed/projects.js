@@ -15,8 +15,8 @@ const main = async () => {
         { name: 'Sahd Wyte Guyz', albums: 'Sahd Wyte Guyz, Sad Systems', image: 'https://scontent-lga3-1.xx.fbcdn.net/v/t1.6435-9/71764973_2220231104935559_7184214138439073792_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=cEzz5QTXYK4AX8aySok&_nc_ht=scontent-lga3-1.xx&oh=00_AT8PT2e7bNtnqGrvh3YRi7GaxBMLyHnZ7Cz-Fa7c_3rxTQ&oe=6266C300' },
     ]
 
-    await Plant.insertMany(plants)
-    console.log("Created some plants!")
+    await Project.insertMany(plants)
+    console.log("Created some musical projects!")
 }
 const run = async () => {
     await main()

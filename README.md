@@ -19,3 +19,4 @@ Presented will be a collection of music that OJ has already made (stored in the 
 **Chorizo band pic courtesy of Please Kill Me** [https://pleasekillme.com/rock-is-dead-long-live-rock/](https://pleasekillme.com/rock-is-dead-long-live-rock/)
 **OCDPP band pic courtesy of OCDPP bandcamp** [https://ocdpp.bandcamp.com/](https://ocdpp.bandcamp.com/)
 **Sahd Wyte Guyz band pic by Seb Meji courtesy of Sahd Wyte Guyz facebook** [https://www.facebook.com/sahdwyteguyz/](https://www.facebook.com/sahdwyteguyz/)
+**All XRay Eyeballs album art courtesy of XRay Eyeballs bandcamp** [https://xrayeyeballs.bandcamp.com/](https://xrayeyeballs.bandcamp.com/)

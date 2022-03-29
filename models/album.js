@@ -3,6 +3,7 @@ const Schema = mongoose.Schema
 
 const Album = new Schema(
     {
+        artist: { type: String, required: false},
         title: { type: String, required: true },
         trackListings: { type: String, required: true },
         releaseDate: { type: String, required: true },
