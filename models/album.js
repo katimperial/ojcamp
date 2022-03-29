@@ -8,7 +8,8 @@ const Album = new Schema(
         trackListings: { type: String, required: true },
         releaseDate: { type: String, required: true },
         label: { type: String, required: true },
-        art: {type: String, required: true}
+        art: {type: String, required: true},
+        project_id: { type: Schema.Types.ObjectId, ref: 'project_id' }
     },
     { timestamps: true },
 )
