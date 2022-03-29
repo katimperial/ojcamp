@@ -1,0 +1,29 @@
+{
+  "name": "ojcamp",
+  "version": "1.0.0",
+  "description": "Fork and clone :) ## Site Objective ## This site is similar to the music hosting website, Bandcamp, except that it is specifically for my friend OJ San Felipe. OJ has been putting out music under numerous projects for many years, but it's time he has it all collected in one place! ## What It Will Look Like ## Presented will be a collection of music that OJ has already made (stored in the site database) and he will also have a form where he can upload new projects as well. He can edit past projects (such as making a change if he realized he forgot to add a credit etc.), and delete them too (maybe some things are better off not shared with the world..) ## Links ## [**Trello Board**](https://trello.com/b/qBIVEiHz/ojcamp)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katimperial/ojcamp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katimperial/ojcamp/issues"
+  },
+  "homepage": "https://github.com/katimperial/ojcamp#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
