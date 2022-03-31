@@ -27,3 +27,4 @@ Presented will be a collection of music that OJ has already made (stored in the 
 **Chorizo album art courtesy of Chorizo bandcamp** [https://chorizonyc.bandcamp.com/](https://chorizonyc.bandcamp.com/)
 **OCDPP album art courtesy of OCDPP bandcamp** [https://ocdpp.bandcamp.com/](https://ocdpp.bandcamp.com/)
 **Sahd Wyte Guyz album art courtesy of Sahd Wyte Guyz bandcamp** [https://sahdwyteguyz.bandcamp.com/](https://sahdwyteguyz.bandcamp.com/)
+**Photo on home page courtesy of ojsanfelipe.com** [http://www.ojsanfelipe.com/about](http://www.ojsanfelipe.com/about)
