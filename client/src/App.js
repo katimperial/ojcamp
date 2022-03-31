@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios'
-import { Routes, Route, useRoutes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
 import Nav from './components/Nav';
