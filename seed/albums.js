@@ -5,8 +5,8 @@ const { Project, Album } = require('../models')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-    const xRayEyeballs = await Project.find({ name: 'XRay Eyeballs' })
-    const goldenTriangle = await Project.find({ name: 'Golden Triangle' })
+    const xRayEyeballs = await Project.find({ name: 'Xray Eyeballs' })
+    const goldenTriangle = await Project.find({ name: 'Golden Triange' })
     const chinaWyte = await Project.find({ name: 'China Wyte' })
     const acetone4 = await Project.find({ name: 'Acetone 4' })
     const chorizo = await Project.find({ name: 'Chorizo' })

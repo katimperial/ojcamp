@@ -10,4 +10,4 @@ const Project = new Schema(
     { timestamps: true },
 )
 
-module.exports = mongoose.model('project', Project)
+module.exports = Project
