@@ -8,4 +8,8 @@ router.get('/projects', controllers.getProjects)
 
 router.post('/projects', controllers.createProject)
 
+router.get('/albums/', controllers.getAlbums)
+
+router.post('/albums', controllers.createAlbum)
+
 module.exports = router;
