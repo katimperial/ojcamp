@@ -4,16 +4,16 @@ import Projects from "./Projects"
 
 const MusicCollection = () => {
 
-    const [projects, setProjects] = useState([])
-    const [selectedProject, setSelectedProject] = useState(null)
+    // const [projects, setProjects] = useState([])
+    // const [selectedProject, setSelectedProject] = useState(null)
 
-    useEffect(() => {
-        async function getProjects() {
-            const res = await axios.get("http://localhost:3001/api/projects/")
-            setProjects(res.data.results)
-        }
-        getProjects()
-    }, [])
+    // useEffect(() => {
+    //     async function getProjects() {
+    //         const res = await axios.get("http://localhost:3001/api/projects/")
+    //         setProjects(res.data.results)
+    //     }
+    //     getProjects()
+    // }, [])
 
 
     return (
