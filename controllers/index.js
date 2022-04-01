@@ -1,5 +1,4 @@
-const Project = require('../models/project');
-const Album = require('../models/album')
+const {Project, Album} = require('../models');
 
 const getProjects = async (req, res) => {
     try {

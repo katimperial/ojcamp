@@ -10,7 +10,7 @@ const Projects = ({displayProject}) => {
     const getProject = async () => {
         try {
             let res = await axios.get("http://localhost:3001/api/projects/")
-            setProject(res.project.name)
+            setProject(res.projects.name)
         } catch(err) {
             console.log(err)
         }
