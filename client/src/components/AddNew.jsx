@@ -5,27 +5,27 @@ const AddNew = () => {
         <div className="newMusic">
             <h3>Add New Music</h3>
             <label>
-                Name:
+                Name: 
                 <input type="text"/>
             </label>
             <label>
-                Album Title:
+                Album Title: 
                 <input type="text"/>
             </label>
             <label>
-                Track Listings:
+                Track Listings: 
                 <input type="text"/>
             </label>
             <label>
-                Release Date:
+                Release Date: 
                 <input type="text"/>
             </label>
             <label>
-                Label:
+                Label: 
                 <input type="text"/>
             </label>
             <label>
-                Album Art URL:
+                Album Art URL: 
                 <input type="text"/>
             </label>
         </div>

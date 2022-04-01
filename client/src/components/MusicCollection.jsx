@@ -4,7 +4,7 @@ import Projects from "./Projects"
 
 const MusicCollection = () => {
 
-    // const [projects, setProjects] = useState([])
+    const [projects, setProjects] = useState([])
     // const [selectedProject, setSelectedProject] = useState(null)
 
     // useEffect(() => {

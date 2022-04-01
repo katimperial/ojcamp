@@ -21,3 +21,8 @@ ul li {
 label {
   margin: 10px
 }
+
+input {
+  border-style: dotted;
+  margin: 5px
+}
