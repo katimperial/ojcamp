@@ -15,6 +15,7 @@ const MusicCollection = () => {
         getProjects()
     }, [])
 
+
     return (
         <div>
             <h1>Projects</h1>
