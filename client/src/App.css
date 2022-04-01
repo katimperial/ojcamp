@@ -10,3 +10,12 @@ ul li {
   display: inline;
   justify-content: space-evenly
 }
+
+.newMusic {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px
+}
