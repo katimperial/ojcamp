@@ -26,3 +26,8 @@ input {
   border-style: dotted;
   margin: 5px
 }
+
+.projectImage {
+  height: auto;
+  width: 300px
+}

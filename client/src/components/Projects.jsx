@@ -12,6 +12,7 @@ const Projects = (props) => {
                 props.projects.map((project) => (
                     <div key={project.id} className="card">
                         <h3>{project.name}</h3>
+                        <img src={project.image} className="projectImage"/>
                         <h4>{project.albums}</h4>
                     </div>
                 ))
