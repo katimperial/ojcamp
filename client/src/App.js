@@ -11,17 +11,7 @@ import AddNew from './components/AddNew';
 
 function App() {
 
-  const [projects, setProjects] = useState([])
-  const [selectedProjects, setSelectedProjects] = useState(null)
 
-  useEffect(() => {
-      async function getProjects() {
-          const res = await axios.get("http://localhost:3001/api/projects/")
-          console.log(res.data.results)
-          setProjects(res.data.results)
-      }
-      getProjects()
-  })
   return (
     <div className="App">
       <header>

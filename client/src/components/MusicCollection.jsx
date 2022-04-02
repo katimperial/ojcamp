@@ -3,43 +3,43 @@ import axios from "axios"
 import Projects from "./Projects"
 
 const MusicCollection = () => {
-    // const [projects, setProjects] = useState([])
-    // const [selectedProjects, setSelectedProjects] = useState(null)
+    // setLoading(true)
+    const [projects, setProjects] = useState([])
+    const [selectedProject, setSelectedProject] = useState(null)
 
+    const getProjects = async () => {
+        await axios.get(`http://localhost:3001/api/projects/`).then(
+            response => 
+            // console.log(response))
+            setProjects(response.data.projects))
+
+    }
+
+    useEffect(() => {
+        getProjects()
+    }, [])
+
+    // function getProjects() {
+    //     const res = await axios.get(`http://localhost:3001/api/projects/`)
+    //     setProjects(res.data.results)
+    // }
     // useEffect(() => {
-    //     async function getProjects() {
-    //         const res = await axios.get("http://localhost:3001/api/projects/")
-    //         console.log(res.data.results)
-    //         setProjects(res.data.results)
-    //     }
-    //     getProjects()
+    //   async function getProjects() {
+    //     const res = await axios.get(`http://localhost:3001/api/projects/`)
+    //     setProjects(res.data.results)
+    //   }
+    //   getProjects()
     // })
+    // setLoading(false)
 
     return (
+        // {(!loading) && (
         <div>
-            {/* <Projects projects={ projects }/> */}
+            <Projects projects={ projects } />
         </div>
+        // )}
     )
 
-    // const [projects, setProjects] = useState([])
-
-    // const [selectedProject, setSelectedProject] = useState(null)
-
-    // useEffect(() => {
-    //     async function getProjects() {
-    //         const res = await axios.get("http://localhost:3001/api/projects/")
-    //         setProjects(res.data.results)
-    //     }
-    //     getProjects()
-    // }, [])
-
-
-//     return (
-//         <div>
-//             <h1>Projects</h1>
-//             <Projects projects={projects} />
-//         </div>
-//     )
  }
 
 export default MusicCollection
