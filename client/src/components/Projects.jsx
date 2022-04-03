@@ -6,7 +6,7 @@ import Albums from "./Albums"
 const Projects = (props) => {
 
     return (
-        <div className="grid">
+        <div className="projectsGrid">
             {
                 // console.log(props.project.id)
                 props.projects.map((project) => (
