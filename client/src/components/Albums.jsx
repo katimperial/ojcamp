@@ -27,24 +27,16 @@ const Albums = ({props, displayAlbums}) => {
             {albums ?
                 albums.map((album) => (
                     <div key={album.id} className="card">
-                        <h3>{album.title}</h3>
+                        <h3>{album.artist}</h3>
+                        <h4>{album.title}</h4>
+                        <h5>{album.trackListings}</h5>
+                        <h5>{album.releaseDate}</h5>
+                        <h5>{album.label}</h5>
+                        <img src={album.art} className="albumArt"/>
                     </div>
                 )) : null
             }
         </div>
-        // <div>{albums ? albums[0] : '' }</div>
-        // <h2>{albums !== null && albums}</h2>
-        // <div className="albumsGrid">
-        //     {
-        //         // console.log(props.project.id)
-        //         props.albums.map((album) => (
-        //             <div key={album.id} className="card">
-        //                 <h3>{album.title}</h3>
-        //                 <img src={album.image} className="albumImage"/>
-        //             </div>
-        //         ))
-        //     }
-        // </div>
     )
 }
 

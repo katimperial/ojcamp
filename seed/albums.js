@@ -27,7 +27,7 @@ const main = async () => {
         trackListings: 'Nightwalkers',
         releaseDate: '6/1/2010',
         label: 'Self released',
-        art: 'waiting',
+        art: 'https://i.ytimg.com/vi/0TniQAmesEA/hqdefault.jpg',
         project_id: xRayEyeballs[0]._id 
         },
         { artist: 'XRay Eyeballs',
@@ -35,7 +35,7 @@ const main = async () => {
         trackListings: 'Egyptian Magician (Let\'s All Get High)',
         releaseDate: '6/25/2010',
         label: 'Self released',
-        art: 'waiting',
+        art: 'https://i.ytimg.com/vi/MDclyuu0qso/maxresdefault.jpg',
         project_id: xRayEyeballs[0]._id 
         },
         { artist: 'Xray Eyeballs',

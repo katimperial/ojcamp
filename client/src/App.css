@@ -36,7 +36,20 @@ input {
   width: 600px;
   border-style: ridge;
   border-width: 3px;
+  /* grid-area: main; */
 }
+
+/* .displayAlbum {
+  grid-area: sidebar
+} */
+
+/* .projectsGrid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "main . sidebar"
+} */
 
 .MC {
   display: flex;
@@ -47,3 +60,20 @@ input {
   width: 60px;
   align-self: center;
 }
+
+/* .projectsGrid {
+  display: flex;
+  flex-direction: row;
+}  */
+
+.displayAlbum {
+  display: flex;
+  justify-content: flex-end;
+  align-self: stretch
+}
+
+.albumArt {
+  height: auto;
+  width: 300px
+}
+

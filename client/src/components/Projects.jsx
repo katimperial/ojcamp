@@ -11,22 +11,25 @@ const Projects = (props) => {
     }
 
     return (
-        <div className="projectsGrid">
-            {
-                // console.log(props.project.id)
-                props.projects.map((project) => (
-                    <div key={project.id} className="card">
-                        <h3>{project.name}</h3>
-                        <img src={project.image} className="projectImage"/>
-                        <h4>{project.albums}</h4>
-                    </div>
-                ))
-
-            }
-            {displayAlbum ? <Albums /> : null}
-
+        <div className="grid">
             <button onClick={toggleAlbums}>{displayAlbum === false ? "View Albums" : "Clear Albums"} 
             </button>
+            <div className="projectsGrid">
+                {
+                // console.log(props.project.id)
+                    props.projects.map((project) => (
+                        <div key={project.id} className="card">
+                            <h3>{project.name}</h3>
+                            <img src={project.image} className="projectImage"/>
+                            <h4>{project.albums}</h4>
+                        </div>
+                    ))
+
+                }
+                <div className="displayAlbum">
+                    {displayAlbum ? <Albums /> : null}
+                </div>
+            </div>
         </div>
     )
 
