@@ -47,7 +47,7 @@ const AddNew = () => {
                 Album Art URL: 
                 <input type="text" value={albumArt} onChange={e => setAlbumArt(e.target.value)}/>
             </label>
-            <button>Submit</button>
+            <button className="submitButton">Submit</button>
         </div>
     )
 }

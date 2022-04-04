@@ -42,3 +42,8 @@ input {
   display: flex;
   flex-direction: row;
 }
+
+.submitButton {
+  width: 60px;
+  align-self: center;
+}

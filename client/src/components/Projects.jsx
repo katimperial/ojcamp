@@ -20,14 +20,15 @@ const Projects = (props) => {
                         <h2></h2> : 
                             <Albums displayAlbum={displayAlbum} /> } */}
                         {displayAlbum ? <Albums /> : null}
-                        <button onClick={toggleAlbums}>{displayAlbum === false ? "View Albums" : "Clear Albums"} 
-                        </button>
                         <h3>{project.name}</h3>
                         <img src={project.image} className="projectImage"/>
                         <h4>{project.albums}</h4>
                     </div>
                 ))
+
             }
+            <button onClick={toggleAlbums}>{displayAlbum === false ? "View Albums" : "Clear Albums"} 
+            </button>
         </div>
     )
 
