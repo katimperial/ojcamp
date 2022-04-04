@@ -37,3 +37,8 @@ input {
   border-style: ridge;
   border-width: 3px;
 }
+
+.MC {
+  display: flex;
+  flex-direction: row;
+}

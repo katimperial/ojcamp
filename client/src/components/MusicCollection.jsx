@@ -14,27 +14,37 @@ const MusicCollection = () => {
             setProjects(response.data.projects))
     }
 
+    // const [displayAlbum, setDisplayAlbum] = useState(false)
 
-    const [albums, setAlbums] = useState([])
-    const [selectedAlbum, setSelectedAlbum] = useState(null)
+    // const toggleAlbums = () => {
+    //     setDisplayAlbum(!displayAlbum)
+    // }
 
-    const getAlbums = async () => {
-        await axios.get(`http://localhost:3001/api/albums/`).then(
-            response =>
-            // console.log(response))
-            setAlbums(response.data.projects))
-    }
+
+    // const [albums, setAlbums] = useState([])
+    // const [selectedAlbum, setSelectedAlbum] = useState(null)
+
+    // const getAlbums = async () => {
+    //     await axios.get(`http://localhost:3001/api/albums/`).then(
+    //         response =>
+    //         // console.log(response))
+    //         setAlbums(response.data.projects))
+    // }
+
+    //     useEffect(() => {
+    //     getProjects()
+    //     getAlbums()
+    // }, [])
 
         useEffect(() => {
-        getProjects()
-        getAlbums()
+            getProjects()
     }, [])
 
 
     return (
         <div>
-            <Projects projects={ projects } />
-            <Albums albums={ albums } />
+            <Projects projects={ projects } className="MC" />
+            {/* <Albums displayAlbum={ displayAlbum } classname="MC" /> */}
         </div>
     )
 
