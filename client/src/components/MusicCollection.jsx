@@ -14,18 +14,22 @@ const MusicCollection = () => {
             setProjects(response.data.projects))
     }
 
-    useEffect(() => {
-        getProjects()
-    }, [])
 
     const [albums, setAlbums] = useState([])
     const [selectedAlbum, setSelectedAlbum] = useState(null)
 
     const getAlbums = async () => {
-        await axios.get(`http://localhost:3001/api/albums`).then(
+        await axios.get(`http://localhost:3001/api/albums/`).then(
             response =>
-            setAlbums(response.data.albums))
+            // console.log(response))
+            setAlbums(response.data.projects))
     }
+
+        useEffect(() => {
+        getProjects()
+        getAlbums()
+    }, [])
+
 
     return (
         <div>
@@ -36,44 +40,5 @@ const MusicCollection = () => {
 
  }
 
-// const MusicCollection = () => {
-//     const [projects, setProjects] = useState([])
-//     const [selectedProject, setSelectedProject] = useState(null)
-
-//     const getProjects = async () => {
-//         await axios.get(`http://localhost:3001/api/projects/`).then(
-//             response => 
-//             // console.log(response))
-//             setProjects(response.data.projects))
-//     }
-
-//     useEffect(() => {
-//         getProjects()
-//     }, [])
-
-//     return (
-//         <div>
-//             <Projects projects={ projects } />
-//         </div>
-//     )
-
-//  }
-
-//  const TheseAlbums = () => {
-//     const [albums, setAlbums] = useState([])
-//     const [selectedAlbum, setSelectedAlbum] = useState(null)
-
-//     const getAlbums = async () => {
-//         await axios.get(`http://localhost:3001/api/albums`).then(
-//             response =>
-//             setAlbums(response.data.albums))
-//     }
-
-//     return (
-//         <div>
-//             <Albums albums={ albums } />
-//         </div>
-//     )
-// }
 
 export default  MusicCollection 
