@@ -4,13 +4,15 @@ import React, { useState, useEffect } from "react"
 
 const Albums = ({props, displayAlbums}) => {
 
-    const [albums, setAlbums] = useState([])
+    const [albums, setAlbums] = useState()
     // const [selectedAlbum, setSelectedAlbum] = useState(null)
 
     const getAlbums = async () => {
         try {
-            let res = await axios.get(`http://localhost:3001/api/albums/`).then(
-            setAlbums(res.data.projects))
+            await axios.get(`http://localhost:3001/api/albums/`).then(
+                response =>
+                // console.log(response))
+                setAlbums(response.data.projects))
         } catch(err) {
             console.log(err)
         }
@@ -18,10 +20,20 @@ const Albums = ({props, displayAlbums}) => {
 
     useEffect(() => {
         getAlbums()
-    }, [displayAlbums])
+    }, [])
 
     return (
-        <h2>{albums !== '' && albums}</h2>
+        <div>
+            {albums ?
+                albums.map((album) => (
+                    <div key={album.id} className="card">
+                        <h3>{album.title}</h3>
+                    </div>
+                )) : null
+            }
+        </div>
+        // <div>{albums ? albums[0] : '' }</div>
+        // <h2>{albums !== null && albums}</h2>
         // <div className="albumsGrid">
         //     {
         //         // console.log(props.project.id)

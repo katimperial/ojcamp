@@ -16,9 +16,10 @@ const Projects = (props) => {
                 // console.log(props.project.id)
                 props.projects.map((project) => (
                     <div key={project.id} className="card">
-                        {displayAlbum === false ?
+                        {/* {displayAlbum === false ?
                         <h2></h2> : 
-                            <Albums displayAlbum={displayAlbum} /> }
+                            <Albums displayAlbum={displayAlbum} /> } */}
+                        {displayAlbum ? <Albums /> : null}
                         <button onClick={toggleAlbums}>{displayAlbum === false ? "View Albums" : "Clear Albums"} 
                         </button>
                         <h3>{project.name}</h3>
