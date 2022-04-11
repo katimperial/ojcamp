@@ -1,3 +1,5 @@
+// https://i.imgur.com/TUPWRFk.jpg
+
 const {Project, Album} = require('../models');
 
 const getProjects = async (req, res) => {
@@ -21,6 +23,23 @@ const createProject = async (req, res) => {
     }
 }
 
+const updateProject = async (req, res) => {
+    try {
+        let updated = await Project.updateOne()
+    } catch (error) {
+        return res.status(500).json( {error: error.message })
+    }
+}
+
+const deleteProjects = async (req, res) => {
+    try {
+        let deleted = await Project.deleteOne()
+        console.log(deleted)
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
 const getAlbums = async (req, res) => {
     try {
         const projects = await Album.find()
@@ -31,6 +50,7 @@ const getAlbums = async (req, res) => {
 }
 
 const createAlbum = async (req, res) => {
+    console.log(req.body)
     try {
         const album = await new Album(req.body)
         await album.save()
@@ -45,6 +65,8 @@ const createAlbum = async (req, res) => {
 module.exports = {
     getProjects,
     createProject,
+    updateProject,
+    deleteProjects,
     getAlbums,
     createAlbum,
 }

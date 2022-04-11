@@ -1,3 +1,4 @@
+import axios from "axios"
 import React, {useState, useEffect} from "react"
 
 const AddNew = () => {
@@ -19,6 +20,22 @@ const AddNew = () => {
     useEffect(() => {console.log(releaseDate)}, [releaseDate])
     useEffect(() => {console.log(label)}, [label])
     useEffect(() => {console.log(albumArt)}, [albumArt])
+
+    const submitNew = async () => {
+        try {
+            await axios.post('http://localhost:3001/api/albums', {
+                artist: name,
+                title: albumTitle,
+                trackListings: trackListings,
+                releaseDate: releaseDate,
+                label: label,
+                art: albumArt,
+                project_id: '6245bb9cab6eebb929931c74'
+            })
+        } catch(err) {
+            console.log(err)
+        }
+    }
 
     return (
         <div className="newMusic">
@@ -47,7 +64,8 @@ const AddNew = () => {
                 Album Art URL: 
                 <input type="text" value={albumArt} onChange={e => setAlbumArt(e.target.value)}/>
             </label>
-            <button className="submitButton">Submit</button>
+            <button onClick={submitNew} className="submitButton">Submit</button>
+            <p>https://media-exp1.licdn.com/dms/image/D4E35AQHCpewreapfmw/profile-framedphoto-shrink_800_800/0/1626707258423?e=1649466000&v=beta&t=GDnuSzNCwG87JfKJLvXAlD-eiZffZdtI1qcmzPZ5mYY</p>
         </div>
     )
 }
