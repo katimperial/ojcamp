@@ -1,21 +1,23 @@
 # OJcamp #
 ## Getting Started ##
 Fork and clone :)
-### Links ###
+### Links: ###
 [**Trello Board**](https://trello.com/b/qBIVEiHz/ojcamp)
 
 [**Component Hierarchy Diagram**](https://lucid.app/lucidchart/c00bb91d-4764-4e14-a3f2-a1f864ab9255/edit?invitationId=inv_98a5a15d-5640-49b0-aeaf-89e4cf5bddc1)
 
 [**ERD**](https://lucid.app/lucidchart/f8a7f384-f4f3-4ce0-b783-53fe25eb9272/edit?invitationId=inv_e253d04e-c2d3-407e-9a4b-44040d43ae12)
 
-[**Heroku (That admittedly does not work)**](https://pure-wave-86443.herokuapp.com/)
+[**Heroku (That admittedly has not deployed correctly)**](https://pure-wave-86443.herokuapp.com/)
 ## Technologies Used ##
+![Mongo, Express, React, Node](https://camo.githubusercontent.com/2fd16dd0b0d63836d2f1bcc5233ff57d97b4238bc48ab1d713b3d058a1135931/68747470733a2f2f6765656b73706572686f75722e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031392f30322f6d65726e2d696d672e706e67253232)
 Mongo, Express, React, Node
 ## Site Objective ##
 This site is similar to the music hosting website, Bandcamp, except that it is specifically for my friend OJ San Felipe. OJ has been putting out music under numerous projects for many years, but it's time he has it all collected in one place!
+![OJCamp front page](https://i.imgur.com/1PRkoMJ.png)
 ## What It Will Look Like ##
-Presented will be a collection of music that OJ has already made (stored in the site database) and he will also have a form where he can upload new projects as well. He can edit past projects (such as making a change if he realized he forgot to add a credit etc.), and delete them too (maybe some things are better off not shared with the world..)
-
+Presented will be a collection of music that OJ has already made (stored in the site database) and he will also have a form where he can upload new albums as well. He can edit past projects (at this point limited to editing the album titles), and delete them too (maybe some things are better off not shared with the world..)
+![Image of Add New Music page](https://i.imgur.com/P0YXAQz.png)
 ## Sources ##
 **XRay Eyeballs band pic courtesy of Kanine Records** [https://www.kaninerecords.com/xray-eyeballs/](https://www.kaninerecords.com/xray-eyeballs/)
 **Golden Triangle band pic courtesy of Golden Triangle Spotify** [https://open.spotify.com/artist/7ols1JyB5ILfVp57R6849D](https://open.spotify.com/artist/7ols1JyB5ILfVp57R6849D)
