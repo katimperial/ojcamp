@@ -1,5 +1,3 @@
-// https://i.imgur.com/TUPWRFk.jpg
-
 const {Project, Album} = require('../models');
 
 const getProjects = async (req, res) => {

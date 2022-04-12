@@ -61,7 +61,6 @@ const AddNew = () => {
                 <input type="text" value={albumArt} onChange={e => setAlbumArt(e.target.value)}/>
             </label>
             <button onClick={submitNew} className="submitButton">Submit</button>
-            {/* <p>https://media-exp1.licdn.com/dms/image/D4E35AQHCpewreapfmw/profile-framedphoto-shrink_800_800/0/1626707258423?e=1649466000&v=beta&t=GDnuSzNCwG87JfKJLvXAlD-eiZffZdtI1qcmzPZ5mYY</p> */}
         </div>
     )
 }
