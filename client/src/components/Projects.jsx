@@ -35,6 +35,7 @@ const Projects = (props) => {
         <div className="grid">
             <button onClick={toggleAlbums}>{displayAlbum === false ? "View Albums" : "Clear Albums"} 
             </button>
+            <p>Please scroll down to view albums!</p>
             <div className="projectsGrid">
                 {
                     props.projects.map((project) => (
