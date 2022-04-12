@@ -37,14 +37,13 @@ const Projects = (props) => {
             </button>
             <div className="projectsGrid">
                 {
-                // console.log(props.project.id)
                     props.projects.map((project) => (
                         <div key={project.id} className="card">
                             <h3>{project.name}</h3>
                             <img src={project.image} className="projectImage"/>
                             <h4>Albums:</h4>
                             <h4>{project.albums}</h4>
-                            <button onClick={()=>updateProject(project._id)}>Edit</button>
+                            <button onClick={()=>updateProject(project._id)}>Edit Album Title</button>
                             <input type="text" value={albumTitle} onChange={e => setAlbumTitle(e.target.value)}/>
                             <button onClick={()=>deleteProject(project._id)}>Delete</button>
                         </div>
