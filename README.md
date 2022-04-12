@@ -18,7 +18,10 @@ This site is similar to the music hosting website, Bandcamp, except that it is s
 ## What It Will Look Like ##
 Presented will be a collection of music that OJ has already made (stored in the site database) and he will also have a form where he can upload new albums as well. He can edit past projects (at this point limited to editing the album titles), and delete them too (maybe some things are better off not shared with the world..)
 ![Image of Add New Music page](https://i.imgur.com/P0YXAQz.png)
-## Sources ##
+![Image of project example with edit/delete buttons](https://i.imgur.com/DNwLSCN.png)
+## Future Changes ##
+To really feel 100% about this project I would love to work on the styling more, and have more editing options when it comes to individual projects/albums.
+## Credits ##
 **XRay Eyeballs band pic courtesy of Kanine Records** [https://www.kaninerecords.com/xray-eyeballs/](https://www.kaninerecords.com/xray-eyeballs/)
 **Golden Triangle band pic courtesy of Golden Triangle Spotify** [https://open.spotify.com/artist/7ols1JyB5ILfVp57R6849D](https://open.spotify.com/artist/7ols1JyB5ILfVp57R6849D)
 **China Wyte band pic courtest of China Wyte bandcamp** [https://chinawyte.bandcamp.com/](https://chinawyte.bandcamp.com/)
