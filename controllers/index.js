@@ -75,6 +75,20 @@ const createAlbum = async (req, res) => {
     }
 }
 
+const deleteAlbums = async (req, res) => {
+    try {
+        const {_id} = req.params
+        const deleted = await Album.findByIdAndDelete(_id)
+        console.log(deleted)
+        if (deleted) { 
+            return res.status(200).send('Album deleted')
+        }
+        throw new Error('Album not found')
+    } catch (error) {
+        return res.status(500).send(error.message);
+    }
+}
+
 module.exports = {
     getProjects,
     createProject,
@@ -82,4 +96,5 @@ module.exports = {
     deleteProjects,
     getAlbums,
     createAlbum,
+    deleteAlbums,
 }

@@ -5,13 +5,11 @@ import React, { useState, useEffect } from "react"
 const Albums = ({props, displayAlbums}) => {
 
     const [albums, setAlbums] = useState()
-    // const [selectedAlbum, setSelectedAlbum] = useState(null)
 
     const getAlbums = async () => {
         try {
             await axios.get(`http://localhost:3001/api/albums/`).then(
                 response =>
-                // console.log(response))
                 setAlbums(response.data.projects))
         } catch(err) {
             console.log(err)
@@ -21,6 +19,15 @@ const Albums = ({props, displayAlbums}) => {
     useEffect(() => {
         getAlbums()
     }, [])
+
+    const deleteAlbum = async (id) => {
+        console.log(id)
+        try {
+            await axios.delete(`http://localhost:3001/api/albums/${id}`)
+        } catch(err) {
+            console.log(err)
+        } window.location.reload()
+    }
 
     return (
         <div>
@@ -33,6 +40,7 @@ const Albums = ({props, displayAlbums}) => {
                         <h5>{album.releaseDate}</h5>
                         <h5>{album.label}</h5>
                         <img src={album.art} className="albumArt"/>
+                        <button onClick={()=>deleteAlbum(album._id)}>Delete</button>
                     </div>
                 )) : null
             }
