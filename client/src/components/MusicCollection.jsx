@@ -14,28 +14,6 @@ const MusicCollection = () => {
             setProjects(response.data.projects))
     }
 
-    // const [displayAlbum, setDisplayAlbum] = useState(false)
-
-    // const toggleAlbums = () => {
-    //     setDisplayAlbum(!displayAlbum)
-    // }
-
-
-    // const [albums, setAlbums] = useState([])
-    // const [selectedAlbum, setSelectedAlbum] = useState(null)
-
-    // const getAlbums = async () => {
-    //     await axios.get(`http://localhost:3001/api/albums/`).then(
-    //         response =>
-    //         // console.log(response))
-    //         setAlbums(response.data.projects))
-    // }
-
-    //     useEffect(() => {
-    //     getProjects()
-    //     getAlbums()
-    // }, [])
-
         useEffect(() => {
             getProjects()
     }, [])

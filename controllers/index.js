@@ -25,16 +25,30 @@ const createProject = async (req, res) => {
 
 const updateProject = async (req, res) => {
     try {
-        let updated = await Project.updateOne()
+        const {_id} = req.params
+        let updated = await Project.findByIdAndUpdate(_id, req.body, {new: true}, (err, project)=>{
+            if (err) {
+                res.status(500).send(err)
+            }
+            if (!project) {
+                res.status(500).send('Project not found')
+            }
+            return res.status(200).json(project)
+        })
     } catch (error) {
-        return res.status(500).json( {error: error.message })
+        // return res.status(500).json( {error: error.message })
     }
 }
 
 const deleteProjects = async (req, res) => {
     try {
-        let deleted = await Project.deleteOne()
+        const {_id} = req.params
+        const deleted = await Project.findByIdAndDelete(_id)
         console.log(deleted)
+        if (deleted) { 
+            return res.status(200).send('Project deleted')
+        }
+        throw new Error('Project not found')
     } catch (error) {
         return res.status(500).send(error.message);
     }
