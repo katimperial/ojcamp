@@ -39,7 +39,7 @@ const AddNew = () => {
 
     return (
         <div className="newMusic">
-            <h3>Add New Music</h3>
+            <h3>Add A New Album</h3>
             <label>
                 Name: 
                 <input type="text" value={name} onChange={e => setName(e.target.value)}/>

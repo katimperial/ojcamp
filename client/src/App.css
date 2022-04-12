@@ -51,24 +51,27 @@ input {
   "main . sidebar"
 } */
 
-.MC {
+/* .MC {
   display: flex;
   flex-direction: row;
-}
+} */
 
 .submitButton {
   width: 60px;
   align-self: center;
 }
 
-/* .projectsGrid {
+.projectsGrid {
   display: flex;
-  flex-direction: row;
-}  */
+  flex-direction: column;
+  align-self:flex-start;
+  justify-content: flex-end;
+} 
 
 .displayAlbum {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-end;
+  align-self: flex-start;
   align-self: stretch
 }
 
@@ -76,4 +79,5 @@ input {
   height: auto;
   width: 300px
 }
+
 

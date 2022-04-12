@@ -10,7 +10,6 @@ const MusicCollection = () => {
     const getProjects = async () => {
         await axios.get(`http://localhost:3001/api/projects/`).then(
             response => 
-            // console.log(response))
             setProjects(response.data.projects))
     }
 
@@ -22,7 +21,6 @@ const MusicCollection = () => {
     return (
         <div>
             <Projects projects={ projects } className="MC" />
-            {/* <Albums displayAlbum={ displayAlbum } classname="MC" /> */}
         </div>
     )
 
